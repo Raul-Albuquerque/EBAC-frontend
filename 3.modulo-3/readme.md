@@ -1,0 +1,1 @@
+Pratica do curso desenvolvedor fullstack python da EBAC.
