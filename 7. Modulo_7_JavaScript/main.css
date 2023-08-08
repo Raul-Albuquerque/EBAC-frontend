@@ -40,3 +40,25 @@ button {
 button:hover {
     background-color: #27ae60;
 }
+
+.mensagem-sucesso {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 16px;
+    display: none;
+}
+
+.mensagem-erro {
+    background-color: red;
+    color: #fff;
+    padding: 8px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    display: none;
+}
+
+input.error {
+    color: red;
+    border-color:red;
+    outline-color: red;
+}
