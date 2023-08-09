@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo A vs Campo B</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Campo A vs Campo B</h1>
+        <h4>Compare os campos: </h4>
+        <form id="form-comparador">
+            <input id="campo-a" type="number" placeholder="Valor A" required>
+            <p class="mensagem-erro"></p>
+            <input id="campo-b" type="number" placeholder="Valor B" required>
+            <div class="botoes">
+                <button id="validar" type="submit">Validar</button>
+                <button id="limpar" type="submit" onclick="window.location.reload()">Limpar mensagens</button>
+            </div>
+            <p class="mensagem-sucesso"></p>
+        </form>
+        <script src="./main.js"></script>
+    </div>
+</body>
+</html>
