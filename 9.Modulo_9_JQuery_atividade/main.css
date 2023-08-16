@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+.container {
+    margin: 200px auto;
+    max-width: 920px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+header {
+    padding: 20px 0;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(128, 2, 128);
+    margin-bottom: 16px;
+}
+
+section {
+    width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+section hr {
+    border: 4px solid rgb(4, 89, 216);
+    width: 80px;
+    margin-bottom: 4px;
+}
+
+section form {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: -16px;
+}
+
+form input,
+form button {
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form input {
+    width: 600px;
+    margin: 0 16px;
+    border: 1px solid #acabab;
+    padding-left: 8px;
+}
+
+form button {
+    width: 120px;
+    background-color: rgb(4, 89, 216);
+    color: #fff;
+    border: rgb(4, 89, 216);
+    padding: 8px;
+}
+
+section h4,
+section ul li {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    text-transform: uppercase;
+}
+
+section h4 {
+    margin-bottom: 18px;
+    font-size: 28px;
+    color: rgb(4, 89, 216);
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    margin-left: 18px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.atividade-concluida {
+    text-decoration: line-through;
+}
