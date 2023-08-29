@@ -1,0 +1,16 @@
+body {
+    background-image: url(./images/corrida2.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.col img {
+    width: 100%;
+}
