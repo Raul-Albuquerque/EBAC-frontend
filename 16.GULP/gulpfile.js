@@ -24,6 +24,7 @@ function compilaSass() {
         .pipe(sass({
             outputStyle: 'compressed'
         }))
+        
         .pipe(sourceMaps.write('./maps'))
         .pipe(gulp.dest('./build/styles'));
 }
