@@ -1,1 +1,1 @@
-Pratica do curso desenvolvedor fullstack python da EBAC.
+Aulas de FrontEnd do curso Fullstack Python da EBAC.
