@@ -1,16 +1,18 @@
 {
-  "name": "22.-landing_page_evento_ficticio",
+  "name": "22.-parcel",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
+    "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.9.3"
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3",
+    "sharp": "^0.31.3"
   }
 }
