@@ -68,8 +68,21 @@ $(document).ready(function() {
             const endereco = `${logradouro}, ${bairro}, ${cidade}, ${estado}`;
 
             $('#endereco').val(endereco);
+        })
+        .catch(function(error) {
+            alert('Ocorreu um erro ao buscar o endereço, tente novamente mais tarde');
+        })
+        .finally(function() {
             $(botao).find('span').addClass('d-none');
             $(botao).find('i').removeClass('d-none');
         })
+    })
+
+    $('#formulario-pedido').submit(function (e) {
+        e.preventDefault();
+
+        if($('#nome').val().length == 0){
+            throw new Error ('Preencha seu nome');
+        }
     })
 })
