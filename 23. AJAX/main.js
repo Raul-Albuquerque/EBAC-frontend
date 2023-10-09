@@ -1,4 +1,5 @@
-/*document.addEventListener('DOMContentLoaded', function() { //evento para capturar o carregamento do DOM
+/*
+document.addEventListener('DOMContentLoaded', function() { //evento para capturar o carregamento do DOM
 
     document.getElementById('btn-buscar-cep').addEventListener('click', function() {  //evento para capturar o click no botão
 
@@ -13,6 +14,7 @@
 })
 */
 
+/*
 $(document).ready(function() {  //evento para capturar o carregamento do DOM
     $('#cep').mask('00000-000');  //adiciona uma máscara ao elemento
 
@@ -36,6 +38,38 @@ $(document).ready(function() {  //evento para capturar o carregamento do DOM
 
             $(botao).find('i').removeClass('d-none'); //procura pelo i e remove a class d-none
             $(botao).find('span').addClass('d-none'); //procura pelo span e remove a class d-none
+        })
+    })
+})
+*/
+
+$(document).ready(function() {
+    $('#cep').mask('00000-000');
+
+    $('#btn-buscar-cep').click(function() {
+
+        const cep = $('#cep').val();
+        const endPoint = `https://viacep.com.br/ws/${cep}/json`;
+        const botao = $(this);
+        $(botao).find('i').addClass('d-none');
+        $(botao).find('span').removeClass('d-none');
+
+
+        fetch(endPoint)
+        .then(function(resposta) {
+            return resposta.json();
+        })
+        .then(function(json) {
+            
+            const logradouro = json.logradouro;
+            const bairro = json.bairro;
+            const cidade = json.localidade;
+            const estado = json.uf;
+            const endereco = `${logradouro}, ${bairro}, ${cidade}, ${estado}`;
+
+            $('#endereco').val(endereco);
+            $(botao).find('span').addClass('d-none');
+            $(botao).find('i').removeClass('d-none');
         })
     })
 })
