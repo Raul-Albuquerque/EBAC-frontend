@@ -30,7 +30,9 @@ function Carro (modelo, fabricante, anoModelo, anoFabricacao) {
 }
 
 const carroDoJoao2 = new Carro("fiesta", "ford", 2020, 2019);
-const carroDaMaria2 = new Carro("ka", "ford", 2021, 2020);
 
-console.log(carroDoJoao2);
-console.log(carroDaMaria2 instanceof Carro);
+function exibeAtributo(nomeAtributo) {
+    console.log(carroDoJoao2[nomeAtributo])
+}
+
+exibeAtributo('fabricante');
