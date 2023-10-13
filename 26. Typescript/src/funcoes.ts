@@ -7,9 +7,9 @@ function calculaArea(base: number, altura: number):number {
 const calculaArea2 = (base:number, altura:number):number => base * altura;
 
 //rest operator
-function somar(...numeros: number) {
-    numeros.reduce();
-}
+// function somar(...numeros: number) {
+//     //numeros.reduce();
+// }
 
 function teste() :string | number {
     if(10 > 5) {
